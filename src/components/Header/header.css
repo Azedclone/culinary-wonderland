@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  outline: none;
+}
+
+:root {
+  --height: 56px;
+  --primary: #c3ffdc;
+}
+
+#header {
+  background-color: var(--primary);
+  padding: 23px 15rem;
+}
+
+#header .logo {
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 34px;
+}
+
+#header .search-form input {
+  height: var(--height);
+  width: 403px;
+  padding: 18px 16px;
+  font-size: 12px;
+  font-style: italic;
+}
+
+#header .search-form input:hover {
+  outline: 1px solid black;
+}
+
+#header .search-form input::placeholder {
+  color: #000;
+}
+
+#header .search-btn {
+  width: 24px;
+  height: 24px;
+  color: black;
+  right: 4%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#header .auth-container span {
+  font-size: 14px;
+}
+
+#header .auth-container span:hover {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+#header .user-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.divider {
+  margin: 1.5rem 0;
+}
+
+.menu-container .menu-item {
+  font-size: 13px;
+  color: #666;
+  position: relative;
+}
+
+.menu-container .menu-item::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  line-height: 1;
+  width: 100%;
+  background-color: #000;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.menu-container .menu-item:hover::after {
+  transform: scaleX(1);
+  transition: transform 0.3s ease;
+}
+
+.menu-container .menu-item:hover {
+  font-weight: 700;
+}

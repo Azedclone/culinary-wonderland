@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #c3ffdc;
+  --secondary: #77fbae;
+}
+
+section {
+  padding: 23px 15rem;
+}
+
+#chefs {
+  background-color: #fcf7f1;
+}
+
+#chefs .chef-item {
+  padding: 1rem 0;
+}
+
+#chefs .chef-avt {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 2px solid #fcf7f1;
+  transition: all 0.5s ease;
+}
+
+#chefs .chef-name {
+  margin-top: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100px;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+}
+
+#chefs .chef-name:hover {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+#chefs .chef-item:hover .chef-avt {
+  transform: translateY(-10%);
+  border-color: black;
+  transition: all 0.5s ease;
+}
+
+.slick-slider {
+  position: relative;
+}
+
+.slider-btn {
+  position: absolute;
+  font-size: 24px;
+  background-color: #fff;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  top: 45%;
+  transform: translateY(-50%);
+  opacity: 0.1;
+  transition: all 0.5s ease;
+}
+
+.slider-btn.btn-prev {
+  left: -8%;
+}
+
+.slider-btn.btn-next {
+  right: -6%;
+}
+
+.slider-btn:hover {
+  background-color: var(--secondary);
+  color: white;
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+
+.slide-item {
+  padding: 2rem 0;
+}
+
+.slide-item-img {
+  transition: 0.5s ease;
+  object-fit: cover;
+}
+
+.slide-item-img:hover {
+  transform: translateY(-8%);
+  transition: transform 0.5s ease;
+}
+
+.slide-item-title {
+  white-space: nowrap;
+  overflow: clip;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  margin: 1rem 0;
+}
+
+.slide-item p:hover {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}

@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#footer .policy span {
+  padding-right: 4rem;
+}
+
+.social-btn li {
+  width: 48px;
+  height: 48px;
+}
