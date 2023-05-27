@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-color: #c3ffdc;
+}
+
+#login {
+  background-color: var(--bg-color);
+  padding: 6rem 0 18rem 0;
+  gap: 40px;
+}
+
+.close-btn {
+  float: right;
+  top: 1%;
+  right: 1%;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#login form input {
+  margin: 1.5rem 0 2rem 0;
+  padding: 18px 0 18px 12px;
+  outline: none;
+}
+
+#login form input::placeholder {
+  font-size: 14px;
+  color: black;
+}
+
+#login form button {
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  padding: 16px 0;
+}
+
+#login .policy {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 12px;
+  width: 25rem;
+  flex-wrap: wrap;
+}
+
+#login .social p {
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  padding-bottom: 16px;
+}
+
+#login .social-btn li {
+  display: inline-block;
+  padding: 0 10px;
+}

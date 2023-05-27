@@ -17,7 +17,7 @@ interface SectionProps {
 export function Section(props: SectionProps) {
   const settings = {
     slidesToShow: props.slideToShow,
-    slidesToScroll: 2,
+    slidesToScroll: 1,
     centerMode: true,
     // autoplay: true,
     nextArrow: (
